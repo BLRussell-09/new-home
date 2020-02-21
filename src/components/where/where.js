@@ -76,7 +76,12 @@ class Where extends React.Component
                 <Icon src={RLG}/>
               <h3 className="vertical-timeline-element-title">Press Finisher</h3>
               <h4 className="vertical-timeline-element-subtitle">Resource Label Group LLC</h4>
-              <p> RFID Antenna Inspection, RFID Antenna Replacement, Press-Roll Inspection, Medine Label </p>
+              <ul>
+                <li>RFID Antenna Inspection</li>
+                <li>RFID Antenna Placement</li>
+                <li>Press Roll QA</li>
+                <li>Product Shipment</li>
+              </ul>
               </VerticalTimelineElement>
 
               <VerticalTimelineElement
@@ -104,10 +109,13 @@ class Where extends React.Component
               iconStyle={{ background: '#8a8b8f', color: '#fff' }}
               icon={<Icon src={Child}/>}
               >
-                <Icon src={OC}/>
-              <h3 className="vertical-timeline-element-title">Children's Minister Apprentice</h3>
-              <h4 className="vertical-timeline-element-subtitle">Resource Label Group LLC</h4>
-              <p> RFID Antenna Inspection, RFID Antenna Replacement, Press-Roll Inspection, Medine Label </p>
+                <a href="http://ottercreek.org/"><Icon src={OC}/></a>
+              <h3 className="vertical-timeline-element-title">Children's Ministry Apprentice</h3>
+              <h4 className="vertical-timeline-element-subtitle">Otter Creek Church</h4>
+              <ul>
+                <li>Curriculum Editing</li>
+                <li>Event Planning</li>
+              </ul>
               </VerticalTimelineElement>
 
             </VerticalTimeline>
