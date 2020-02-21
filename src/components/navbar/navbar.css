@@ -5,7 +5,7 @@
   background-color: #24252A;
 }
 
-li, a, button {
+li.about, a.contact-btn, a.about, button {
   font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
