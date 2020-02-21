@@ -1,14 +1,16 @@
 import React from 'react';
 import Navbar from './components/navbar/navbar';
 import Skills from './components/skills/skills';
+import Who from './components/who/who';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/ >
-      <header className="App-header">
+      <Navbar/>
+      <Who/>
+      <header className="App-header row">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
