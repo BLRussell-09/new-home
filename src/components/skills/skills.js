@@ -6,10 +6,9 @@ class Skills extends React.Component
   render()
   {
     return(
-      <div className="skills-spa">
+      <div className="skills-spa row">
         <h3 className="title">Here's what I know</h3>
         <div className="skill-bar">
-
         </div>
       </div>
     )
