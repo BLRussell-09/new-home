@@ -7,6 +7,7 @@ class Navbar extends React.Component
   {
     return (
       <header className="nav_bar">
+        <h4 className="name">Barry Russell</h4>
         <nav>
           <ul className="nav_links">
             <li><a className="about" href="#">Who I Am</a></li>
@@ -14,7 +15,7 @@ class Navbar extends React.Component
             <li><a className="about" href="#">What I Know</a></li>
           </ul>
         </nav>
-        <a href="#"><button>Contact</button></a>
+        <a className="contact-btn" href="#" ><button>Contact</button></a>
       </header>
     );
   }

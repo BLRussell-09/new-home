@@ -15,7 +15,7 @@ li, a, button {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px 10%;
 }
@@ -23,6 +23,7 @@ header {
 .nav_links {
   list-style: none;
   display: inline-block;
+  padding-top: 16px;
 }
 
 ul li {
@@ -36,6 +37,7 @@ ul li {
 
 .nav_links li a:hover{
   color: #0088a9;
+  text-decoration: none;
 }
 
 button {
@@ -49,4 +51,15 @@ button {
 
 button:hover {
   background-color: rgba(0,136,169,0.8);
+}
+
+.name {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.contact-btn {
+  margin-left: auto;
+  margin-right: 10px;
 }

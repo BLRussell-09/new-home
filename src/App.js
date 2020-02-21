@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar/navbar';
 import Skills from './components/skills/skills';
 import Who from './components/who/who';
-import logo from './logo.svg';
+import Where from './components/where/where';
 import './App.css';
 
 function App() {
@@ -10,20 +10,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Who/>
-      <header className="App-header row">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Where/>
       <div>
         <Skills />
       </div>
