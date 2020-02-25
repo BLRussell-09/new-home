@@ -40,7 +40,7 @@ class Where extends React.Component
               contentArrowStyle={{ borderRight: '7px solid  rgba(33, 150, 243,)'}}
               date="April 2019 - present"
               iconStyle={{ background: '#6fc7ae', color: '#fff' }}
-              icon={ <img class="img-fluid" src='https://raw.githubusercontent.com/BLRussell-09/new-home/master/src/icons/oc.png' /> }
+              icon={ <img class="img-fluid" src='https://image.flaticon.com/icons/svg/1420/1420466.svg' /> }
               id="dd-timeline-element"
               >
               <Icon src={Fortera}/>
