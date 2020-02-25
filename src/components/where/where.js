@@ -3,6 +3,7 @@ import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline
 import DdBack from '../../icons/dd-back.png';
 import Dudes from '../../icons/dd.svg';
 import Dollar from '../../icons/dollar.svg'
+import {ReactComponent as Logo} from '../../icons/dollar.svg';
 import Print from '../../icons/resource.svg';
 import Code from '../../icons/code.svg';
 import Food from '../../icons/food.svg';
@@ -35,11 +36,11 @@ class Where extends React.Component
 
               <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgba(111, 199, 174, 0.6)', color: '#fff', backgroundImage: 'url(' + ForteraBack + ')' }}
+              contentStyle={{ background: 'rgba(111, 199, 174, 0.6)', color: '#fff', backgroundImage: 'url(' + require('../../icons/fortera-back.png') + ')' }}
               contentArrowStyle={{ borderRight: '7px solid  rgba(33, 150, 243,)'}}
               date="April 2019 - present"
               iconStyle={{ background: '#6fc7ae', color: '#fff' }}
-              icon={<Icon src={Dollar}/>}
+              icon={ <img class="img-fluid" src='https://raw.githubusercontent.com/BLRussell-09/new-home/master/src/icons/oc.png' /> }
               id="dd-timeline-element"
               >
               <Icon src={Fortera}/>
