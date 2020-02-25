@@ -1,5 +1,5 @@
-// import axios from 'axios';
-import VerticalTimelineElement from 'react-vertical-timeline-component';
+import axios from 'axios';
+import constants from '../../../firebase/constants';
 
 var styles = {
   contentBack: '',
@@ -11,6 +11,7 @@ var styles = {
 
 var timelineElement = {
   date: '',
+  icon: '',
   title: '',
   subtitle: '',
   skills: [],
@@ -23,7 +24,7 @@ const createSkillsList = (skillsArray) => {
     var listItem = `<li>${skill}</li>`
     list = list.concat(listItem);
   })
-  return list
+  return list;
 }
 
 const createTimelineElement = (timelineElement) => {
@@ -32,9 +33,11 @@ const createTimelineElement = (timelineElement) => {
   var element = `
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: ${styles.contentBack}, color: ${styles.contentColor}, backgroundImage: url(${styles.contentBackImg}) }}
+    contentStyle={{ background: ${styles.contentBack}, color: ${styles.contentColor}, backgroundImage: url(require('../../icons/${styles.contentBackImg}')) }}
     date = {{ ${timelineElement.date} }
     iconStyle = {{ background: ${styles.iconBackground}, color: ${styles.iconColor} }}
+    icon={ <img className="img-fluid" src={require("../../icons/${timelineElement.icon}")} /> }
+    id="dd-timeline-element"
   >
     <h3 className="vertical-timeline-element-title">${timelineElement.title}</h3>
     <h4 className="vertical-timeline-element-subtitle">${timelineElement.subtitle}</h4>
@@ -43,8 +46,16 @@ const createTimelineElement = (timelineElement) => {
   return element;
 }
 
-var testElement = timelineElement
-testElement.date = 'April 2019 - present';
-testElement.skills = ['PowerOn', 'SQL', 'Symitar'];
-testElement.subtitle = 'Fortera Credit Union';
-testElement.title = 'Systems Analyst';
+const getTimeData = () => {
+  axios.get(`${constants.databaseURL}/timelineElements/`)
+    .then((res) => {
+      return console.log(res);
+    })
+    .catch()
+}
+
+// const getStyleData = () => {
+
+// }
+
+export default { getTimeData };

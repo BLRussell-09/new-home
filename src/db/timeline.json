@@ -1,0 +1,22 @@
+{
+  "timelineElements": [
+    {
+      "date" : "",
+      "icon" : "",
+      "id": "",
+      "title" : "",
+      "subtitle" : "",
+      "styles" : {}
+    }
+  ],
+  "styles": [
+    {
+      "contentBack" : "",
+      "contentColor" : "",
+      "contentBackImg" : "",
+      "iconBackground" : "",
+      "iconColor" : "",
+      "elementId" : ""
+    }
+  ]
+}

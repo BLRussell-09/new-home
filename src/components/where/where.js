@@ -15,10 +15,20 @@ import OC from '../../icons/oc.png';
 import Fortera from '../../icons/fortera.png';
 import Icon from '../icon/icon';
 import 'react-vertical-timeline-component/style.min.css';
+import timelineData from './ajax/get';
 import './where.css';
 
 class Where extends React.Component
 {
+
+  componentDidMount() {
+    timelineData.getTimeData();
+  }
+  getTimelineData = () => {
+    console.log(timelineData.getTimeData());
+    console.log('T')
+  };
+
   render()
   {
     return (
@@ -40,7 +50,7 @@ class Where extends React.Component
               contentArrowStyle={{ borderRight: '7px solid  rgba(33, 150, 243,)'}}
               date="April 2019 - present"
               iconStyle={{ background: '#6fc7ae', color: '#fff' }}
-              icon={ <img class="img-fluid" src='https://image.flaticon.com/icons/svg/1420/1420466.svg' /> }
+              icon={ <img class="img-fluid" src={require('../../icons/dollar.svg')} /> }
               id="dd-timeline-element"
               >
               <Icon src={Fortera}/>
